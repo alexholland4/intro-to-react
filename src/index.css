@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+	--background: 358 0% 100%;
+	--foreground: 358 0% 10%;
+	--card: 358 0% 100%;
+	--card-foreground: 358 0% 15%;
+	--popover: 358 0% 100%;
+	--popover-foreground: 358 95% 10%;
+	--primary: 358 95% 39.6%;
+	--primary-foreground: 0 0% 100%;
+	--secondary: 358 10% 90%;
+	--secondary-foreground: 0 0% 0%;
+	--muted: 320 10% 95%;
+	--muted-foreground: 358 0% 40%;
+	--accent: 320 10% 90%;
+	--accent-foreground: 358 0% 15%;
+	--destructive: 0 50% 50%;
+	--destructive-foreground: 358 0% 100%;
+	--border: 358 20% 82%;
+	--input: 358 20% 50%;
+	--ring: 358 95% 39.6%;
+	--radius: 0.5rem;
+}
+
+.dark  {
+	--background: 358 50% 5%;
+	--foreground: 358 5% 90%;
+	--card: 358 50% 0%;
+	--card-foreground: 358 5% 90%;
+	--popover: 358 50% 5%;
+	--popover-foreground: 358 5% 90%;
+	--primary: 358 95% 39.6%;
+	--primary-foreground: 0 0% 100%;
+	--secondary: 358 30% 10%;
+	--secondary-foreground: 0 0% 100%;
+	--muted: 320 30% 15%;
+	--muted-foreground: 358 5% 60%;
+	--accent: 320 30% 15%;
+	--accent-foreground: 358 5% 90%;
+	--destructive: 0 100% 30%;
+	--destructive-foreground: 358 5% 90%;
+	--border: 358 30% 18%;
+	--input: 358 30% 18%;
+	--ring: 358 95% 39.6%;
+	--radius: 0.5rem;
+}
+  
+@layer base {
+	* {
+		@apply border-border;
+	}
+
+	body {
+		@apply bg-background text-foreground h-screen w-full font-sans;
+	}
+
+	#root {
+		@apply h-full w-full flex justify-center items-center relative
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		@apply m-0 font-mono font-bold
+	}
+
+	a {
+		@apply underline cursor-pointer
+	}
+}
+
+@layer components {
+	.card {
+		@apply bg-card rounded border-border border-2 px-8 py-4
+	}
+
+	button {
+		@apply px-3 py-1 bg-primary text-primary-foreground rounded font-mono hover:bg-primary/90 active:bg-primary/80 transition-colors
+	}
+
+	button.secondary {
+		@apply bg-secondary text-secondary-foreground hover:bg-secondary/90 active:bg-secondary/80
+	}
+
+	button.outlined {
+		@apply bg-card text-primary-foreground border-border border-2 hover:bg-muted active:bg-muted/90
+	}
+
+	button.lg {
+		@apply text-lg px-4 py-2
+	}
+
+	button:disabled {
+		@apply opacity-50 pointer-events-none cursor-not-allowed
+	}
+}
+
+
