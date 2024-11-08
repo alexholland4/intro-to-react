@@ -5,7 +5,7 @@ export default function Page() {
 	return (
 		<>
 			<div className="card flex flex-col gap-4 w-[40em] items-start">
-				<h1 className="text-3xl w-full text-center">Components and Props</h1>
+				<h1 className="w-full text-3xl text-center">Components and Props</h1>
 
 				<div className="flex flex-row flex-wrap w-full gap-2">
 					{/* TODO 1: Insert some WebDevLogo components below! */}
@@ -27,8 +27,8 @@ export default function Page() {
 function WebDevLogo() {
 	return (
 		// TODO 4: Make this component take a string prop, then make it so that the logo alerts that string when clicked
-		<button onClick={() => alert("Hello!")} className="outlined size-32 p-3 transition-colors cursor-pointer">
-			<img src={Logo} className="w-full h-full object-contain" />
+		<button onClick={() => alert("Hello!")} className="p-3 transition-colors cursor-pointer outlined size-32">
+			<img src={Logo} className="object-contain w-full h-full" />
 		</button>
 	)
 }
@@ -36,7 +36,7 @@ function WebDevLogo() {
 
 function Card({ title, description }) {
 	return (
-		<div className="card px-4 py-3">
+		<div className="px-4 py-3 card">
 			{/* TODO 3: fill in the <h1> and <p> elements with the corresponding props */}
 			<h1 className="text-xl"></h1>
 			<p></p>

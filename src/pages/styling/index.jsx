@@ -14,7 +14,7 @@ export default function Page() {
 	return (
 		<>
 			<div className="card flex flex-col gap-2 w-[30em]">
-				<h1 className="text-3xl text-center w-full">Styling with Tailwindcss</h1>
+				<h1 className="w-full text-3xl text-center">Styling with Tailwindcss</h1>
 				{/* TODO 1: Change the <h1> element below to increase its text size */}
 				<h1 className="">I am some header text, make me big!</h1>
 

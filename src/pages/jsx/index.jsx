@@ -10,8 +10,8 @@ export default function Page() {
 
 	return (
 		<>
-			<div className="card flex flex-col gap-1 items-start">
-				<h1 className="text-3xl w-full text-center">JSX Exercises</h1>
+			<div className="flex flex-col items-start gap-1 card">
+				<h1 className="w-full text-3xl text-center">JSX Exercises</h1>
 
 				<h1 className="text-2xl">someText:</h1>
 				<p className="text-lg">Put someText here!</p>

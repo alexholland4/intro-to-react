@@ -95,6 +95,14 @@
 	button:disabled {
 		@apply opacity-50 pointer-events-none cursor-not-allowed
 	}
+
+	input {
+		@apply rounded bg-card border-input border-2 px-2 py-1
+	}
+
+	input::placeholder {
+		@apply text-muted-foreground
+	}
 }
 
 
