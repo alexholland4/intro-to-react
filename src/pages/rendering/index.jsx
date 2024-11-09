@@ -1,5 +1,9 @@
 import HomeButton from "../../home-button"
 
+/* 
+	More reading on why React needs a key prop for rendering list elements: https://www.epicreact.dev/why-react-needs-a-key-prop
+*/
+
 export default function Page() {
 	const lines = ["Hello, this is line 1", "And this is line 2", "This is line 3!", "Line 4 is here"]
 
@@ -21,7 +25,7 @@ export default function Page() {
 	const showLines = false
 
 	console.log(showLines ? "true!" : "false!")
-	// "true!" if showLines else "false"
+	// Python equivalent: "true!" if showLines else "false"
 
 	return (
 		<>

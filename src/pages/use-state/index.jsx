@@ -3,7 +3,7 @@ import Logo from "../../assets/logo.svg"
 import { useState } from "react"
 
 export default function Page() {
-	// TODO 1: Review the usage of the useState hook for the current coun.
+	// TODO 1: Review the usage of the useState hook for the current count.
 	const countAsVariable = 0 // this does not work!
 	const [count, setCount] = useState(0) // Count is the value, setCount is how you set the value, and 0 is the initial value
 

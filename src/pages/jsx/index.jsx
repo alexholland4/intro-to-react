@@ -32,14 +32,14 @@ export default function Page() {
 				<br></br>
 
 				<h1 className="text-2xl"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join">Join</a> the brokenUpSentence together here:</h1>
-				<p className="text-lg">Round someNumber here!</p>
-				{/* TODO 4: Change the above line to add the joined-together brokenUpSentence into the HTML */}
+				<p className="text-lg">Join brokenUpSentence here!</p>
+				{/* TODO 4: Change the above line to add the joined-together brokenUpSentence into the HTML using brokenUpSentence.join */}
 
 				<br />
 
 				<h1 className="text-2xl">Disable the button depending on isButtonDisabled:</h1>
 				<button>Submit</button>
-				{/* TODO 5: Change the above line to set the button's disabled state to the value of isButtonDisabled */}
+				{/* TODO 5: Change the above line to set the button's disabled attribute to the value of isButtonDisabled */}
 				{/* TODO 6: Make the button alert some text when it's clicked */}
 			</div>
 
