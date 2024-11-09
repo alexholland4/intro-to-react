@@ -1,8 +1,19 @@
-# React + Vite
+# Intro to React Workshop for MadHacks 2024 by WebDev UW
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## How to run:
+### Install dependencies
+`npm run install`
 
-Currently, two official plugins are available:
+### Run development server
+`npm run dev`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## [Slides](https://docs.google.com/presentation/d/1FH-JkK2hXOJJ0sfzBFGDrnesS0pGkhgzXEPiP2SY1cE/edit#slide=id.g3157741a84d_0_17)
+
+## Useful Links:
+- React Quickstart: https://react.dev/learn
+- Tailwind Docs: https://tailwindcss.com/
+- Tailwind + Vite Setup: https://tailwindcss.com/docs/guides/vite
+- Flexbox Froggy: https://flexboxfroggy.com/
+- MDN: https://developer.mozilla.org/en-US/
