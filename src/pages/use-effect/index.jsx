@@ -26,6 +26,8 @@ export default function Page() {
 	useEffect(() => {
 		const interval = setInterval(() => console.log("count:", count), 1000)
 
+		fetchPosts()
+
 		return () => {
 			clearInterval(interval)
 		}
