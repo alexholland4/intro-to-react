@@ -19,7 +19,7 @@ export default function Page() {
 	return (
 		<>
 			<div className="card flex flex-col gap-4 w-[40em] items-start">
-				<h1 className="w-full text-3xl text-center">useState Hook</h1>
+				<h1 className="w-full text-3xl text-center">useEffect Hook</h1>
 
 				{/* Counter Example */}
 				<div className="flex flex-row items-center w-full gap-4">
