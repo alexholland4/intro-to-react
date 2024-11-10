@@ -9,18 +9,24 @@ export default function Page() {
 
 				<div className="flex flex-row flex-wrap w-full gap-2">
 					{/* TODO 1: Insert some WebDevLogo components below! */}
-
+					<WebDevLogo />
+					<WebDevLogo />
+					<WebDevLogo />
+					<WebDevLogo />
+					<WebDevLogo />
+					<WebDevLogo />
 				</div>
 
 				<div className="flex flex-row flex-wrap w-full gap-2">
 					{/* TODO 2: Insert some Card components with different titles and descriptions below! */}
-
+					<Card title="hello!" description={"this is a description"} />
+					<Card title="hello 2!" description={"this is NOT a description"} large={true} 
+					/>
 				</div>
 			</div>
 
 			<HomeButton />
 		</>
-
 	)
 }
 
@@ -34,12 +40,12 @@ function WebDevLogo() {
 }
 
 
-function Card({ title, description }) {
+function Card({ title, description, large }) {
 	return (
-		<div className="px-4 py-3 card">
+		<div className={`${large ? "px-12 py-6" : "px-4 py-3"} card`}>
 			{/* TODO 3: fill in the <h1> and <p> elements with the corresponding props */}
-			<h1 className="text-xl"></h1>
-			<p></p>
+			<h1 className="text-xl">{title}</h1>
+			<p>{description}</p>
 		</div>
 	)
 }

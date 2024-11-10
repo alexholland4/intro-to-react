@@ -7,6 +7,14 @@ import HomeButton from "../../home-button"
 export default function Page() {
 	const lines = ["Hello, this is line 1", "And this is line 2", "This is line 3!", "Line 4 is here"]
 
+	console.log(
+		lines.map((line) => line.toUpperCase())
+	)
+
+	console.log(
+		[1, 2, 3, 4, 5, 6, 7, 8].map(num => num * 2)
+	)
+
 	const cards = [
 		{
 			title: "Card 1",
@@ -22,9 +30,11 @@ export default function Page() {
 		}
 	]
 
-	const showLines = false
+	const showLines = true
 
-	console.log(showLines ? "true!" : "false!")
+	console.log(
+		showLines ? "AAAA!" : "BBBB!"
+	)
 	// Python equivalent: "true!" if showLines else "false"
 
 	return (
@@ -35,16 +45,36 @@ export default function Page() {
 				{/* TODO 3: Show the lines only if showLines is true */}
 				{/* TODO 4: Show the lines only if showLines is true, otherwise show the cards only */}
 
+				{
+					showLines ? (
+						<>
+							<p />
+							<div className="flex flex-col flex-wrap w-full gap-2">
+								{/* TODO 1: Map all the lines from the lines variable as <p> elements */}
 
-				<div className="flex flex-col flex-wrap w-full gap-2">
-					{/* TODO 1: Map all the lines from the lines variable as <p> elements */}
+								{
+									lines.map(line => (
+										<p key={line}>{line}</p>
+									))
+								}
 
-				</div>
-				
-				<div className="flex flex-row flex-wrap w-full gap-2">
-					{/* TODO 2: Map all the card objects from the cards variable as Card components */}
+							</div>
+						</>
 
-				</div>
+					) : (
+						<div className="flex flex-row flex-wrap w-full gap-2">
+							{/* TODO 2: Map all the card objects from the cards variable as Card components */}
+							{
+								cards.map(card => (
+									<Card key={card.title} title={card.title} description={card.description} />
+								))
+							}
+						</div>
+					)
+				}
+
+
+
 			</div>
 
 			<HomeButton />
