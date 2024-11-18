@@ -33,18 +33,41 @@ export default function Page() {
 				<h1 className="w-full text-3xl text-center">Rendering</h1>
 
 				{/* TODO 3: Show the lines only if showLines is true */}
+
+				{
+					showLines == false ? (
+						
+						<div className="flex flex-col flex-wrap w-full gap-2">
+						{/* TODO 1: Map all the lines from the lines variable as <p> elements */}
+
+							{
+								lines.map(line => (
+									<p key={line}>{line}</p>
+								))
+							}
+
+
+						</div>
+
+					) : (
+						<div className="flex flex-row flex-wrap w-full gap-2">
+							{/* TODO 2: Map all the card objects from the cards variable as Card components */}
+							
+							{
+								cards.map(card => (
+									<Card key={card.title} title={card.title} description={card.description} />
+								))
+							}
+
+						</div>
+					)
+				}
+
+
 				{/* TODO 4: Show the lines only if showLines is true, otherwise show the cards only */}
 
 
-				<div className="flex flex-col flex-wrap w-full gap-2">
-					{/* TODO 1: Map all the lines from the lines variable as <p> elements */}
-
-				</div>
 				
-				<div className="flex flex-row flex-wrap w-full gap-2">
-					{/* TODO 2: Map all the card objects from the cards variable as Card components */}
-
-				</div>
 			</div>
 
 			<HomeButton />

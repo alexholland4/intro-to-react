@@ -16,13 +16,13 @@ export default function Page() {
 			<div className="card flex flex-col gap-2 w-[30em]">
 				<h1 className="w-full text-3xl text-center">Styling with Tailwindcss</h1>
 				{/* TODO 1: Change the <h1> element below to increase its text size */}
-				<h1 className="">I am some header text, make me big!</h1>
+				<h1 className="text-2xl text-red-500">I am some header text, make me big!</h1>
 
 				{/* TODO 2: Change the <p> element below to change its text color to red */}
-				<p>I want to be red</p>
+				<p className="text-red-500">I want to be red</p>
 
 				{/* TODO 3: Make the <div> below a rounded square box that is a shade of blue */}
-				<div />		
+				<div className="w-12 h-12 bg-blue-500 rounded-full"/>		
 			</div>
 
 			<HomeButton />
